@@ -1,9 +1,0 @@
-<form action="{% url action='doctors' %}" method="POST">
-  <table>
-    {{ search_doctor_form.as_table | safe }}
-    <tr>
-      <td>&nbsp;</td><td><input type="submit" value="Search" /></td>
-    </tr>
-  </table>
-</form>
-
