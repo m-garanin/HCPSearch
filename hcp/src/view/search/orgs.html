@@ -1,0 +1,47 @@
+{% extends "search/base_result.html" %}
+
+{% block title %}
+Organization Information
+{% endblock %}
+
+{% block result %}
+<h1><center>Organization Information</center></h1>
+
+
+FOUND: {{ npidatas|length}}
+{% if  need_details %}
++ 
+  <b style="color:red">there are very more results, please detail your query</b>
+{% endif %}
+
+<table border="1">
+  <tr>
+    <td>NPI</td>	
+    <td>Organization Name</td>	
+    <td>Taxonomy	</td>
+    <td>Description	</td>
+    <td>Telephone	</td>
+    <td>Address	</td>
+    <td>City</td>	
+    <td>State	</td>
+    <td>Postal Code</td>
+  </tr>
+
+{% for obj in npidatas %}
+  <tr>
+    <td>{{ obj.npi }}</td>
+    <td>{{ obj.organization_name_legal_business_name }}</td>
+    <td>{{ obj.healthcare_taxonomy_code_1 }}</td>
+    <td><b>TODO</b></td>
+
+    <td>{{ obj.business_mailing_address_telephone_number }}</td>
+    <td>{{ obj.first_line_business_mailing_address }}</td>
+    <td>{{ obj.business_mailing_address_city_name }}</td>
+    <td>{{ obj.business_mailing_address_state_name }}</td>
+    <td>{{ obj.business_mailing_address_postal_code }}</td>
+  </tr>
+  
+{% endfor %}
+</table>
+
+{% endblock %}

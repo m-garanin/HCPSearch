@@ -1,0 +1,9 @@
+<form action="{% url action='orgs' %}" method="POST">
+  <table>
+    {{ search_org_form.as_table | safe }}
+    <tr>
+      <td>&nbsp;</td><td><input type="submit" value="Search" /></td>
+    </tr>
+  </table>
+</form>
+

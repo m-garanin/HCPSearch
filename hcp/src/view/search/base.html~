@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>
+    {% block title %}
+    Health Care Provider Search
+    {% endblock %}
+  </title>	
+
+  <style>
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      font-size:14px;
+    }
+    input { width: 10em;}
+    
+  </style>
+</head>
+
+<body>
+  <table width="90%"  align="center">
+    <tr height="100px;">
+      <td align="center">
+	HEALTH CARE PROVIDER SEARCH
+      </td>
+    </tr>
+    <tr>
+      <td>
+	{% block content %}
+	{% endblock %}
+      </td>
+    </tr>
+
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{% extends "search/base.html" %}
+
+{% block content %}
+<table align="center">
+  <tr>
+    <td><b>SEARCH FOR AN INDIVIDUAL</b></td>
+    <td width="150px"></td>
+    <td><b>SEARCH FOR AN ORGANIZATION</b></td>
+  </tr>
+  <tr>
+    <td>{% include "search/search_doctor_form.html" %}</td>
+    <td></td>
+    <td>{% include "search/search_org_form.html" %}</td>
+  </tr>
+</table>
+{% endblock %}
+

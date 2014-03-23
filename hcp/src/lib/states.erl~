@@ -1,0 +1,16 @@
+%%% @author os <os@macbook-air-os>
+%%% @copyright (C) 2014, os
+%%% @doc
+%%%
+%%% @end
+%%% Created : 23 Mar 2014 by os <os@macbook-air-os>
+
+-module(states).
+-export(get_states/0).
+
+
+get_states() ->
+    [{undefined, ""},
+     {"WA", "WA"}, 
+     {"AA", "BB"}].
+
