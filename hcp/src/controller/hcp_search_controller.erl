@@ -6,7 +6,7 @@
 %%% Created : 22 Mar 2014 by os <os@macbook-air-os>
 
 -module(hcp_search_controller, [Req]).
--compile(export_all).
+-export([index/2, doctors/2, orgs/2]).
 
 -define(LIMIT, 200).
 -define(DOC_TYPE, "1").
