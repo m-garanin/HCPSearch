@@ -12,7 +12,6 @@
      {"DC", "DISTRICT OF COLUMBIA"}, 
      {"DE", "DELAWARE"},
      {"FL", "FLORIDA"}, 
-     {"FM", "MICRONESIA"},
      {"GA", "GEORGIA"},
      {"GU", "GUAM"}, 
      {"HI", "HAWAII"}, 
@@ -28,6 +27,7 @@
      {"ME", "MAINE"}, 
      {"MH", "MARSHALL ISLANDS"},
      {"MI", "MICHIGAN"}, 
+     {"FM", "MICRONESIA"}, % MICRONESIA, FEDERATED STATES OF
      {"MN", "MINNESOTA"}, 
      {"MO", "MISSOURI"}, 
      {"MP", "MARIANA ISLANDS"},
