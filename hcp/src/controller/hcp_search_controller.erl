@@ -72,6 +72,7 @@ make_conditions([], Res) -> Res;
 make_conditions([{Key, undefined}|Tail], Res) -> 
     make_conditions(Tail, Res);
 make_conditions([{Key, Value}|Tail], Res) ->
-    NewRes = [{Key, 'matches', "*^" ++ Value}] ++ Res,
+    CleanValue = lists:filter( fun(X)-> X /= $* end,  Value),
+    NewRes = [{Key, 'matches', "*^" ++ CleanValue}] ++ Res,
     make_conditions(Tail, NewRes).
 
